@@ -1,6 +1,6 @@
 const CACHE_NAME = "my-blog-cache-v1";
 const urlsToCache = [
-  "https://yourblog.blogspot.com/"
+  "https://kookhack.blogspot.com/"
 ];
 
 self.addEventListener("install", (event) => {
@@ -14,3 +14,4 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request).then((response) => response || fetch(event.request))
   );
 });
+
